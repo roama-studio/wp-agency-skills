@@ -1,0 +1,12 @@
+{
+  "name": "roama",
+  "description": "Plugins by the ROAMA web studio",
+  "owner": { "name": "ROAMA web studio", "email": "roama.studio@gmail.com" },
+  "plugins": [
+    {
+      "name": "wp-agency-skills",
+      "source": "./plugins/wp-agency-skills",
+      "description": "WordPress themes, local install, safe edits, deploy and measured QA (qa-kit)"
+    }
+  ]
+}

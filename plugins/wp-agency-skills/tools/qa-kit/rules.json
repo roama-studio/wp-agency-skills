@@ -1,0 +1,54 @@
+{
+  "about": "QA kit tolerances. Levels: fail = clearly broken for a visitor, warn = worth a look, info = not measured. The QA agent decides what becomes a bug.",
+  "widths": [320, 360, 390, 428, 768, 1440, 1920, 2560],
+  "height": 900,
+  "landscape_phone": { "width": 844, "height": 390 },
+  "zoom": { "width": 1280, "height": 800, "factor": 2 },
+  "max_pages": 20,
+  "settle_ms": 1200,
+  "long_text_factor": 3,
+  "performance": {
+    "width": 390,
+    "height": 844,
+    "network": { "download_kbps": 1600, "upload_kbps": 750, "latency_ms": 150 },
+    "cpu_slowdown": 4,
+    "lcp_ms": { "warn": 2500, "fail": 4000 },
+    "cls": { "warn": 0.1, "fail": 0.25 },
+    "long_tasks_ms": { "warn": 200, "fail": 600 },
+    "page_kb": { "warn": 1600, "fail": 3000 },
+    "js_kb": { "warn": 300, "fail": 600 },
+    "image_kb": { "warn": 300, "fail": 800 },
+    "image_oversize_ratio": 2.5
+  },
+  "axe": { "fail_impacts": ["critical", "serious"], "warn_impacts": ["moderate"] },
+  "regression": { "widths": [390, 1440], "changed_ratio": 0.005, "pixel_delta": 32 },
+  "webkit": { "width": 390, "height": 844 },
+  "original": {
+    "about": "qa-kit original: the edited copy of a client project against its original commit. pixel_delta 0 = exact (any changed pixel counts); mask_selectors are covered with a solid box in both versions on top of canvas, video, iframe, [data-qa-mask] and --mask; box_gap groups changed pixels into regions, at most max_boxes per page and width.",
+    "widths": [360, 390, 414, 768, 1024, 1280, 1440, 1920],
+    "pixel_delta": 0,
+    "mask_selectors": [],
+    "box_gap": 8,
+    "max_boxes": 20,
+    "jpg_quality": 80,
+    "settle_ms": 400
+  },
+  "wp": {
+    "about": "qa-kit wp: a theme in a throwaway WordPress Playground. Widths of both passes (normal and the client's worst case), widths always screenshotted, the first start downloads WordPress and the plugins.",
+    "widths": [360, 390, 768, 1024, 1440],
+    "shot_widths": [390, 1440],
+    "settle_ms": 800,
+    "start_timeout_s": 900,
+    "max_links": 60
+  },
+  "legal": {
+    "about": "The technical legal minimum. EU/EEA clients: fail; others: warn. Not legal advice.",
+    "eu_countries": ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV",
+      "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO"],
+    "impressum_countries": ["DE", "AT"],
+    "google_fonts_hosts": ["fonts.googleapis.com", "fonts.gstatic.com"],
+    "privacy_link": "privacy|datenschutz|конфіденц|приватн|персональн|prywatno|privacidad|confidentialit|privacit",
+    "impressum_link": "impressum",
+    "placeholder": "[FILL IN:"
+  }
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# qa-kit from the wp-agency-skills plugin (Node 18+). The first run installs its Node
+# dependencies (Playwright + axe-core) and Playwright's Chromium next to the tool.
+kit="$(cd "$(dirname "${BASH_SOURCE[0]}")/../tools/qa-kit" && pwd)"
+if [ ! -d "$kit/node_modules/playwright" ]; then
+  echo "qa-kit: first run - installing Playwright and axe-core (npm ci) ..." >&2
+  (cd "$kit" && npm ci --omit=dev --no-audit --no-fund >&2) || { echo "qa-kit: npm ci failed" >&2; exit 1; }
+  (cd "$kit" && npx --no-install playwright install chromium >&2) || { echo "qa-kit: playwright install chromium failed" >&2; exit 1; }
+fi
+exec "${QA_KIT_NODE:-node}" "$kit/cli.mjs" "$@"
