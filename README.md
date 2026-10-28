@@ -19,11 +19,11 @@
 **Встановлення** (у терміналі):
 
 ```bash
-claude plugin marketplace add RobiKovach/wp-agency-skills
+claude plugin marketplace add roama-studio/wp-agency-skills
 claude plugin install wp-agency-skills@roama
 ```
 
-Або в сесії Claude Code: `/plugin marketplace add RobiKovach/wp-agency-skills`, потім
+Або в сесії Claude Code: `/plugin marketplace add roama-studio/wp-agency-skills`, потім
 `/plugin install wp-agency-skills@roama`.
 
 Потрібно: Node 18+, Git Bash на Windows (для команди `qa-kit`). Перший запуск `qa-kit` сам
@@ -31,7 +31,7 @@ claude plugin install wp-agency-skills@roama
 перевірці теми.
 
 Навички викликаються самі, коли задача підходить, або явно: `/wp-agency-skills:wp-theme-qa`.
-Приклад готової теми, зробленої за цими навичками: [ROAMA base](https://github.com/RobiKovach/roama-wp-theme).
+Приклад готової теми, зробленої за цими навичками: [ROAMA base](https://github.com/roama-studio/roama-wp-theme).
 
 Ліцензія MIT (див. `LICENSE`). Тексти адмінки плагінів-мостів і гайд власника сайту — українською.
 
@@ -51,11 +51,11 @@ A [Claude Code](https://code.claude.com) plugin with how the ROAMA web studio bu
 **Install** (in a terminal):
 
 ```bash
-claude plugin marketplace add RobiKovach/wp-agency-skills
+claude plugin marketplace add roama-studio/wp-agency-skills
 claude plugin install wp-agency-skills@roama
 ```
 
-Or in a Claude Code session: `/plugin marketplace add RobiKovach/wp-agency-skills`, then
+Or in a Claude Code session: `/plugin marketplace add roama-studio/wp-agency-skills`, then
 `/plugin install wp-agency-skills@roama`.
 
 Requires Node 18+ and, on Windows, Git Bash (for the `qa-kit` command). The first `qa-kit` run
@@ -63,7 +63,7 @@ installs Playwright and Chromium itself (~150 MB). WordPress Playground is fetch
 first theme check.
 
 Skills load on their own when a task fits, or explicitly: `/wp-agency-skills:wp-theme-qa`.
-A theme built with these skills: [ROAMA base](https://github.com/RobiKovach/roama-wp-theme).
+A theme built with these skills: [ROAMA base](https://github.com/roama-studio/roama-wp-theme).
 
 MIT license (see `LICENSE`). The admin texts of the bridge plugins and the site owner's guide are in
 Ukrainian.

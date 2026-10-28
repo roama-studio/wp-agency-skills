@@ -8,7 +8,7 @@ description: 'Turn an approved static site into a classic WordPress theme the cl
 A migration, not a redesign: the static site the client approved is the
 source of truth. Markup, classes, ids, `data-*`, CSS and JS move as they
 are; only the source of content (SCF, WordPress) and form sending (CF7)
-change. A reference build is the free ROAMA base theme (https://github.com/RobiKovach/roama-wp-theme): the
+change. A reference build is the free ROAMA base theme (https://github.com/roama-studio/roama-wp-theme): the
 same structure, SCF Local JSON, CF7, leads, importer and client docs.
 
 ## 1. Before any PHP: audit and plan (write it down)
@@ -119,7 +119,7 @@ screenshot.png (1200x900)
   Flamingo lists every lead as «[your-subject]» from «[your-email]» when
   the form has no such fields.
 - **Leads to Telegram + the client's Google Sheet (reference: the ROAMA
-  base theme https://github.com/RobiKovach/roama-wp-theme - `roama/inc/leads.php`,
+  base theme https://github.com/roama-studio/roama-wp-theme - `roama/inc/leads.php`,
   `inc/leads-core.php`, `js/leads-utm.js`, `setup/leads-apps-script.gs`,
   `setup/LEADS-SETUP.md`; copy them, rename the prefix):**
   - hook `wpcf7_mail_sent` AND `wpcf7_mail_failed` (mail may be unset at
