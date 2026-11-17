@@ -1,7 +1,10 @@
 # WordPress agency skills for Claude Code
 
-**Потрібен сайт? → [ROAMA, веб-студія](https://robikovach.github.io/roama-studio/)** ·
-**Need a website? → [ROAMA web studio](https://robikovach.github.io/roama-studio/)**
+> **Цей плагін тепер у каталозі [roama-studio/skills](https://github.com/roama-studio/skills)** разом з іншими навичками ROAMA: `claude plugin marketplace add roama-studio/skills`.
+> **This plugin now lives in the [roama-studio/skills](https://github.com/roama-studio/skills) catalog** with the other ROAMA skills: `claude plugin marketplace add roama-studio/skills`.
+
+**Потрібен сайт? → [ROAMA, веб-студія](https://roama-studio.github.io/)** ·
+**Need a website? → [ROAMA web studio](https://roama-studio.github.io/)**
 
 ## Українською
 
